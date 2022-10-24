@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Sharks{% endblock title %}
+
+{% block heading %} <h1>Shark</h1> {% endblock heading %}
+
+{% block content %}
+<ul>
+    {% for shark in sharks %}
+    <li>{{ shark.name }}</li>
+    {% endfor %}
+</ul>
+
+<form method="POST">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Species">
+    <input type="submit" value="Create Shark">
+</form>
+{% endblock content %}

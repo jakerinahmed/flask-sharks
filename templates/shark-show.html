@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Shark - {{ shark.name }}{% endblock title %}
+
+{% block heading %} <h1>{{shark.name}}</h1> {% endblock heading %}
+
+{% block content %}
+<ul>
+    <li>{{ shark.species }}</li>
+</ul>
+{% endblock content %}
